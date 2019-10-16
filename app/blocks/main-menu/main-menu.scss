@@ -1,0 +1,12 @@
+.main-menu {
+  text-align: left;
+
+  &__list {
+    @include listReset();
+  }
+
+  &__link.is-active {
+    color: green;
+    font-weight: 700;
+  }
+}

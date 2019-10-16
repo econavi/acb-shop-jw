@@ -1,0 +1,15 @@
+extends ../templates/default.pug
+
+block head
+  - var pageTitle = 'Контакты';
+  - var pageDescription = 'Описание раздела контакы';
+
+block content
+  body.page
+    .page__inner.content-container
+      header.page__main-nav
+        +mainNav()
+      main.page__content
+        h1 Контакты
+      footer.page__footer
+        include ../../blocks/footer/footer.pug

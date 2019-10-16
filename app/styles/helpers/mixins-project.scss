@@ -1,0 +1,45 @@
+@mixin fontSizeDefault() {
+  @include fluidFontSize(
+    $font-size-default-min,
+    $font-size-default-max,
+    $phone,
+    $tv
+  );
+}
+
+@mixin setFontFluid($minSize, $maxSize) {
+  @include fluidFontSize(
+    $minSize,
+    $maxSize,
+    $phone,
+    $tv
+  );
+};
+
+@mixin setPropFluid($prop, $minSize, $maxSize) {
+  @include fluidSizeProp(
+    $prop,
+    $minSize,
+    $maxSize,
+    $phone,
+    $tv
+  );
+};
+
+@mixin hoverDefault() {
+  &:hover {
+    @include media-not-touch() {
+      opacity: $opacity-hover-default;
+      @content;
+    }
+  }
+};
+
+@mixin activeDefault() {
+  &:active {
+    @include media-not-touch() {
+      opacity: $opacity-active-default;
+      @content;
+    }
+  }
+};

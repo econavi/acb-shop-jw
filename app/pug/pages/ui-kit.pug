@@ -1,0 +1,30 @@
+extends ../templates/default.pug
+
+block head
+  - var pageTitle = 'UI-Kit';
+  - var pageDescription = 'UI-Kit';
+
+block content
+  body.page
+    .page__inner.content-container
+      header.page__main-nav
+        +mainNav()
+      main.page__content
+        h1 UI-Kit
+
+        .ui-section
+          h2.ui-section__title Star Rating
+          .ui-section__component
+            p.ui-section__line
+              +rating('cat1')
+            p.ui-section__line
+              +rating('cat2')
+          .ui-section__description
+            p Блок: 'rating'
+            p Пример вызова: +rating('cat1')
+            p Принимает строку с уникальным id
+
+
+
+      footer.page__footer
+        include ../../blocks/footer/footer.pug

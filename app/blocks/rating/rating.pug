@@ -1,0 +1,25 @@
+mixin rating(catNum)
+  - 
+    var idA = catNum+'-a';
+    var idB = catNum+'-b';
+    var idC = catNum+'-c';
+    var idD = catNum+'-d';
+    var idE = catNum+'-e';
+  
+  fieldset.rating
+    .rating__group
+      input.rating__input(type="radio" name=catNum id=idA value="1")
+      label.rating__star(for=idA aria-label="Ужасно")
+
+      input.rating__input(type="radio" name=catNum id=idB value="2")
+      label.rating__star(for=idB aria-label="Сносно")
+
+      input.rating__input(type="radio" name=catNum id=idC value="3")
+      label.rating__star(for=idC aria-label="Нормально")
+
+      input.rating__input(type="radio" name=catNum id=idD value="4")
+      label.rating__star(for=idD aria-label="Хорошо")
+
+      input.rating__input(type="radio" name=catNum id=idE value="5")
+      label.rating__star(for=idE aria-label="Отлично")
+

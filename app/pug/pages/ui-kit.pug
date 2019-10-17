@@ -11,7 +11,7 @@ block content
         +mainNav()
       main.page__content
         h1 UI-Kit
-
+        //- Rating
         .ui-section
           h2.ui-section__title Star Rating
           .ui-section__component
@@ -21,11 +21,11 @@ block content
               +rating('cat2')
           .ui-section__description
             p Блок: 'rating'
-            p Пример вызова: +rating('cat1')
+            p Mixin Pug: +rating('cat1')
             p Принимает строку с уникальным id
-
+        //- Checkbox
         .ui-section
-          h2.ui-section__title Checkbox
+          h2.ui-section__title Custom checkbox
           .ui-section__component
             p.ui-section__line
               label.check
@@ -53,6 +53,22 @@ block content
           
           .ui-section__description
             p Блок: 'check'
+        //- Accordion
+        .ui-section
+          h2.ui-section__title Accordion
+          .ui-section__component
+            p.ui-section__line
+              .accordion
+                h2.accordion__header Accordion 1
+                .accordion__body
+                  .accordion__content
+                   p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            p.ui-section__line
+              .accordion
+                h2.accordion__header Accordion 2
+                .accordion__body
+                  .accordion__content
+                    p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic..
 
 
       footer.page__footer

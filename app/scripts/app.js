@@ -1,5 +1,6 @@
 import svg4everybody from 'svg4everybody';
 import mainMenu from '../blocks/main-menu/main-menu';
+import Accordion from '../blocks/accordion/accordion';
 
 class Viewer {
   constructor() {
@@ -15,6 +16,9 @@ class Viewer {
   initClasses() {
     this.svg4everybody();
     this.mainMenu();
+
+    const accordionList = document.querySelectorAll('.accordion');
+    [].map.call(accordionList, (e) => new Accordion(e));
   }
 }
 

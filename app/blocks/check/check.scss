@@ -45,9 +45,15 @@
 /* Disabled */
 
 .check__input:disabled + .check__box {
-  box-shadow: 0 0 0 0.1em #9B9B9B;
+  box-shadow: 0 0 0 0.1em #dee0e4;
+}
+.check__input:disabled ~ .check__label {
+  color: #dee0e4;
 }
 
 .check__input:checked:disabled + .check__box {
-  background-color: #9B9B9B;
+  background-color: #dee0e4;
+}
+.check__input:checked:disabled ~ .check__label {
+  color: #dee0e4;
 }

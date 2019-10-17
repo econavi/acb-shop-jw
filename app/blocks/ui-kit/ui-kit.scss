@@ -1,0 +1,27 @@
+.ui-kit {
+  padding-bottom: 5em;
+}
+
+.ui-section {
+  padding: 1em;
+  border: 1px solid $gray-light;
+  margin-bottom: 2em;
+
+  &__line {
+    margin-bottom: 0.5em;
+  }
+
+  &__title {
+    color: $gray-dark;
+  }
+
+  &__description {
+    padding-top: 0.5em;
+    * {
+      color: $gray;
+      font-size: 14px;
+    }
+  }
+}
+
+

@@ -21,38 +21,34 @@ $transition-default: 0.2s;
 // COLORS
 $white: #FFFFFF;
 $black: #000000;
-$blue: #0098ED;
 $red: #CC0000;
-$yellow: #FAFF00;
-$green: #9BC53D;
-$green-light: #4CAF50;
-$green-deep: #009933;
 $orange: #FF7C06;
+$yellow: #ffea00;
+$green: #00da87;
+$blue: #0098ED;
+$brown: #964B00;
+$gray-light: #e9e9e9;
 $gray: #999999;
-$gray-light: #FBFBFB;
+$gray-dark: #6b6b6b;
+
 
 // state
 $color-danger:    $red; // цвет ошибки, опасного действия
-$color-success:   $green-deep; // цвет подтверждения, удачного завершения операции
-$color-warning:   #D8AE1C; // цвет информационного сообщения
+$color-success:   $green; // цвет подтверждения, удачного завершения операции
+$color-warning:   $orange; // цвет информационного сообщения
 
 // text
 $text-color-black: $black;
 $text-color-white: $white;
 $text-color-gray: $gray;
+$text-color-gray-dark: $gray-dark;
 $text-color-green: $green;
 $text-color-blue: $blue;
-
-// buttons
-$button-color-black: $black;
+$text-color-brown: $brown;
 
 // other
-$color-blockquote-bg: $gray-light;
-$color-footer-bg: $gray-light;
-$color-active-link-menu: $green-light;
-$color-link-default: $blue;
-
 $shdow-default: 30px 30px 0px rgba(0, 0, 0, 0.05);
+$color-link-default: $blue;
 
 // ------------------------------------------------------
 // FONTS
@@ -79,15 +75,12 @@ $font-size-default-max: 24px;
 $headers-default-font-size-min: 32px;
 $headers-default-font-size-max: 72px;
 
+$input-font-size: $font-size-xxs;
+$placeholder-font-size: $font-size-xxxs;
+
 // LINE-HEIGHT
 $default-line-height: 1.2;
 $headers-default-line-height: 1.4;
-
-
-// ------------------------------------------------------
-// FORM
-$placeholder-font-size: $font-size-xs;
-
 
 // ------------------------------------------------------
 // MEDIA QUERIES

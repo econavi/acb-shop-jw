@@ -103,4 +103,5 @@ button,
 select {
   @include hoverDefault();
   @include activeDefault();
+  cursor: pointer;
 }

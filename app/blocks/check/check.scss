@@ -25,6 +25,11 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   box-shadow: 0 0 0 0.1em #4A90E2;
+  cursor: pointer;
+}
+
+.check__label {
+  cursor: pointer;
 }
 
 /* Checked */
@@ -46,9 +51,11 @@
 
 .check__input:disabled + .check__box {
   box-shadow: 0 0 0 0.1em #dee0e4;
+  cursor: default;
 }
 .check__input:disabled ~ .check__label {
   color: #dee0e4;
+  cursor: default;
 }
 
 .check__input:checked:disabled + .check__box {

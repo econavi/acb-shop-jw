@@ -45,6 +45,7 @@ $icon-star-off: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vi
     height: $size-star;
     background-size: $size-star $size-star;
     background-repeat: repeat-x;
+    cursor: pointer;
   }
 
   &__star:hover,

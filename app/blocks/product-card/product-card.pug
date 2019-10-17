@@ -1,0 +1,31 @@
+mixin productCard(data, mods)
+  -
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' product-card--' + modsList[i].trim();
+      }
+    }
+
+    var imgSrc = data.img;
+    var name = data.name || 'Товар без названия';
+    var price = '' + (data.price || 0);
+    var price = price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ') + ' ₽';
+    
+
+  .product-card(class=allMods)
+    img.product-card__photo(src=imgSrc)
+    .product-card__content
+      .product-card__rating
+        +rating('s4630a')
+      a.product-card__title(href="javascript:void(0)")=name
+      .product-card__footer
+        .product-card__row
+          span.product-card__price=price
+          button(type="button").product-card__buy-btn.button.button--primary.button--inline.button--round В корзину
+        .product-card__row
+          button.product-card__compare(type="button") Сравнить
+          span.product-card__stock В наличии
+
+

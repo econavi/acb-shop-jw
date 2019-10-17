@@ -1,0 +1,106 @@
+.ui-kit
+  //- Star Rating
+  .ui-section
+    h2.ui-section__title Star Rating
+    .ui-section__component
+      .ui-section__line
+        +rating('cat1')
+      .ui-section__line
+        +rating('cat2')
+    .ui-section__description
+      p Блок: rating
+      p Mixin Pug: +rating('cat1')
+      p Принимает строку с уникальным id
+  //- Checkbox
+  .ui-section
+    h2.ui-section__title Custom checkbox
+    .ui-section__component
+      .ui-section__line
+        label.check
+          input.check__input(type="checkbox")
+          span.check__box 
+          span.check__label Checkbox
+      
+      .ui-section__line
+        label.check
+          input.check__input(type="checkbox" checked)
+          span.check__box 
+          span.check__label Checked
+      
+      .ui-section__line
+        label.check
+          input.check__input(type="checkbox" disabled)
+          span.check__box 
+          span.check__label Disabled
+      
+      .ui-section__line
+        label.check
+          input.check__input(type="checkbox" checked disabled)
+          span.check__box 
+          span.check__label Checked Disabled
+    
+    .ui-section__description
+      p Блок: check
+  //- Accordion
+  .ui-section
+    h2.ui-section__title Accordion
+    .ui-section__component
+      .ui-section__line
+        .accordion
+          h2.accordion__header Accordion 1
+          .accordion__body
+            .accordion__content
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+      .ui-section__line
+        .accordion
+          h2.accordion__header Accordion 2
+          .accordion__body
+            .accordion__content
+              p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic..
+    .ui-section__description
+      p Блок: accordion
+  //- Buttons
+  .ui-section
+    h2.ui-section__title Buttons
+    .ui-section__component
+      .ui-section__line
+        button.button.button--inline(type="button") Inline
+      .ui-section__line 
+        button.button.button--inline.button--primary.button--round(type="button") Rounded
+      .ui-section__line
+        button.button(type="button") Ghost
+      .ui-section__line 
+        button.button.button--primary(type="button") Primary
+      .ui-section__line 
+        button.button.button--secondary(type="button") Secondary
+    .ui-section__description
+      p Блок: button
+      p Модификаторы: --inline, --primary, --secondary, --round 
+  //- Product card
+  .ui-section
+    h2.ui-section__title Product Card
+    .ui-section__component
+      .ui-section__line(style="max-width: 300px")
+        +productCard({
+          img: '/assets/img/akb/akb1.jpg',
+          name: 'Аккумулятор Bosch S4 70Ah 630A 261x175x220',
+          price: 9000,
+        })
+      .ui-section__line
+        +productCard({
+          img: '/assets/img/akb/akb1.jpg',
+          name: 'Аккумулятор Bosch S4 70Ah 630A 261x175x220',
+          price: 9000,
+        }, 'h')
+    .ui-section__description
+      p Блок: product-card
+      p Модификаторы: --h
+      p Mixin pug:
+      pre 
+        code
+            | +productCard({
+            |    img: '/assets/img/akb/akb1.jpg',
+            |    name: 'Аккумулятор Bosch S4 70Ah 630A 261x175x220',
+            |    price: 9000,
+            |  }, 'h')
+            

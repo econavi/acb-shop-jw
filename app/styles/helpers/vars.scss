@@ -6,6 +6,8 @@ $content-padding-x: 15px;
 $content-max-width: $page-width - ($page-margins-x * 2);
 $grid-gutter-default: 3.8%;
 
+$border-radius-default: 5px;
+
 // ------------------------------------------------------
 // Z-INDEX
 $main-menu_z-index: 8000;
@@ -47,7 +49,7 @@ $text-color-blue: $blue;
 $text-color-brown: $brown;
 
 // other
-$shdow-default: 30px 30px 0px rgba(0, 0, 0, 0.05);
+$shdow-default: 0px 1px 4px rgba(0, 0, 0, 0.15);
 $color-link-default: $blue;
 
 // ------------------------------------------------------

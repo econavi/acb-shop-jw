@@ -8,18 +8,19 @@
   $ghost-border-color: $gray-light;
   $ghost-text-color: $text-color-gray;
 
+  $border-radius: $border-radius-default;
+
   display:  inline-block;
   width: 100%;
   vertical-align: top;
-  padding: 12px 24px;
+  padding: 10px 24px;
 
-  @include setFontFluid(12px, 18px);
+  @include setFontFluid(12px, 14px);
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   font-family: inherit;
   white-space: nowrap;
-  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.005em;
 
@@ -41,6 +42,10 @@
 
   &--inline {
     width: auto;
+  }
+
+  &--round {
+    border-radius: $border-radius;
   }
 
   &--primary {

@@ -1,0 +1,126 @@
+.product-card {
+  $paddingY: 16px;
+  $paddingX: 18px;
+  $marginY: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: $shdow-default;
+
+  &__photo {
+    display: block;
+    width: 80%;
+    max-width: 255px;
+    margin: 0 auto;
+    margin-bottom: $marginY;
+  }
+
+  &__content {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100%; // for IE11
+    padding: $paddingY $paddingX;
+    padding-bottom: 105px;
+    text-align: left;
+  }
+
+  &__rating {
+    margin-bottom: $marginY;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: $marginY;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    text-decoration: none;
+    font-weight: 500;
+    color: $gray-dark;
+  }
+
+  &__footer {
+    position: absolute;
+    left: $paddingX;
+    right: $paddingX;
+    bottom: $paddingY;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: $marginY * 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    padding: 0 2px;
+    font-size: 18px;
+    white-space: nowrap;
+    font-weight: 600;
+    background-image: linear-gradient(to top, $yellow, $yellow 10px, transparent 10px);
+  }
+
+  &__compare {
+    @include buttonReset();
+    padding-left: 22px;
+    color: $gray-dark;
+    font-size: 14px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath d='M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z' fill='%236b6b6b'/%3E%3C/svg%3E");
+  }
+
+  &__stock {
+    display: inline-block;
+    padding-left: 22px;
+    font-size: 14px;
+    color: $green;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z' fill='%2300da87'/%3E%3C/svg%3E");
+  }
+}
+
+/* Gorizontal view */
+
+.product-card--h {
+  $break-point: $tablet;
+  $paddingY: 16px;
+  $paddingX: 18px;
+
+  @include media($break-point) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product-card__photo {
+    @include media($break-point) {
+      max-width: 155px;
+      margin: 10px;
+    }
+  }
+
+  .product-card__rating {
+    @include media($break-point) {
+      position: absolute;
+      top: $paddingY;
+      right: $paddingX;
+    }
+  }
+
+  .product-card__title {
+    @include media($break-point) {
+      max-width: 73%;
+      font-weight: 700;
+    }
+  }
+}

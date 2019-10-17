@@ -1,0 +1,57 @@
+.button {
+  $primary-bg-color: $yellow;
+  $primary-text-color: $text-color-gray-dark;
+  
+  $secondary-bg-color: $gray-light;
+  $secondary-text-color: $gray-dark;
+  
+  $ghost-border-color: $gray-light;
+  $ghost-text-color: $text-color-gray;
+
+  display:  inline-block;
+  width: 100%;
+  vertical-align: top;
+  padding: 12px 24px;
+
+  @include setFontFluid(12px, 18px);
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  font-family: inherit;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.005em;
+
+  color: $ghost-text-color;
+  background: transparent;
+  border: 2px solid $ghost-border-color;
+
+  cursor: pointer;
+  user-select: none;
+  transition: opacity $transition-default;
+
+  &:hover {
+    opacity: $opacity-hover-default;
+  }
+
+  &:active {
+    opacity: $opacity-active-default;
+  }
+
+  &--inline {
+    width: auto;
+  }
+
+  &--primary {
+    color: $primary-text-color;
+    background: $primary-bg-color;
+    border: none;
+  }
+
+  &--secondary {
+    color: $secondary-text-color;
+    background: $secondary-bg-color;
+    border: none;
+  }
+}

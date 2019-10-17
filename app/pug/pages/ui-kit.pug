@@ -24,6 +24,35 @@ block content
             p Пример вызова: +rating('cat1')
             p Принимает строку с уникальным id
 
+        .ui-section
+          h2.ui-section__title Checkbox
+          .ui-section__component
+            p.ui-section__line
+              label.check
+                input.check__input(type="checkbox")
+                span.check__box 
+                span.check__label Checkbox
+            
+            p.ui-section__line
+              label.check
+                input.check__input(type="checkbox" checked)
+                span.check__box 
+                span.check__label Checked
+            
+            p.ui-section__line
+              label.check
+                input.check__input(type="checkbox" disabled)
+                span.check__box 
+                span.check__label Disabled
+            
+            p.ui-section__line
+              label.check
+                input.check__input(type="checkbox" checked disabled)
+                span.check__box 
+                span.check__label Checked Disabled
+          
+          .ui-section__description
+            p Блок: 'check'
 
 
       footer.page__footer

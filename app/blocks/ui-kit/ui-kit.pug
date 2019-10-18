@@ -61,7 +61,16 @@
               p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic..
     .ui-section__description
       p Блок: accordion
-  
+
+  //- View switcher
+  .ui-section
+    h2.ui-section__title View switcher
+    .ui-section__component
+      .ui-section__line.ui-view-switcher
+        include ../view-switcher/view-switcher.pug
+    .ui-section__description
+      p Блок: view-switcher
+
   //- Buttons
   .ui-section
     h2.ui-section__title Buttons
@@ -119,4 +128,4 @@
             |    name: 'Аккумулятор Bosch S4 70Ah 630A 261x175x220',
             |    price: 9000,
             |  }, 'h')
-            
+ 

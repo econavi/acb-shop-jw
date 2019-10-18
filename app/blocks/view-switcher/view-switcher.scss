@@ -1,0 +1,56 @@
+.view-switcher {
+  $color-icon: black;
+  $switcher-size: 8em;
+  $switcher-height: $switcher-size / 2;
+  $button-size: $switcher-size / 2;
+  
+  position: relative;
+  display: inline-block;
+  width: $switcher-size;
+  height: $switcher-size / 2;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $button-size;
+    height: $button-size;
+    font-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3em;
+    cursor: pointer;
+
+    &:hover {
+      opacity: $opacity-hover-default;
+    }
+
+    &--modules {
+      left: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0zM30 0h20v20H30zM30 30h20v20H30zM0 30h20v20H0z' fill='%23000'/%3E%3C/svg%3E");
+      
+    }
+
+    &--list {
+      right: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0h34v10H16zM16 20h34v10H16zM16 40h34v10H16zM0 40h10v10H0zM0 20h10v10H0zM0 0h10v10H0z' fill='%23000'/%3E%3C/svg%3E");
+    }
+  }
+}
+
+.view-switcher__input:checked + .view-switcher__btn {
+  opacity: 0.5;
+  cursor: default;
+}

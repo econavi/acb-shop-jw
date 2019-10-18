@@ -1,0 +1,14 @@
+.form-input {  
+  display: block;
+  width: 100%;
+  padding: 0.72em 1.05em;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: $border-radius-default;
+  border: 2px solid $gray-light;
+  
+  &--size-xl {
+    padding: 0.92em 1.45em;
+    font-size: 20px;
+  }
+}

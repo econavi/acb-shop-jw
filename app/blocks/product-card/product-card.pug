@@ -15,17 +15,18 @@ mixin productCard(data, mods)
     
 
   .product-card(class=allMods)
-    img.product-card__photo(src=imgSrc)
-    .product-card__content
-      .product-card__rating
-        +rating('s4630a')
-      a.product-card__title(href="javascript:void(0)")=name
-      .product-card__footer
-        .product-card__row
-          span.product-card__price=price
-          button(type="button").product-card__buy-btn.button.button--primary.button--inline.button--round В корзину
-        .product-card__row
-          button.product-card__compare(type="button") Сравнить
-          span.product-card__stock В наличии
+    .product-card__inner
+      img.product-card__photo(src=imgSrc)
+      .product-card__content
+        .product-card__rating
+          +rating('s4630a')
+        a.product-card__title(href="javascript:void(0)")=name
+        .product-card__footer
+          .product-card__row
+            span.product-card__price=price
+            button(type="button").product-card__buy-btn.button.button--primary.button--inline.button--round В корзину
+          .product-card__row
+            button.product-card__compare(type="button") Сравнить
+            span.product-card__stock В наличии
 
 

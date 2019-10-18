@@ -3,11 +3,16 @@
   $paddingX: 18px;
   $marginY: 10px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #FFFFFF;
-  box-shadow: $shdow-default;
+  padding: 3px; // For shadow
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: $shdow-default;
+  }
 
   &__photo {
     display: block;
@@ -90,16 +95,29 @@
   }
 }
 
+
+.product-card--simple {
+  .product-card__rating,
+  .product-card__buy-btn,
+  .product-card__compare,
+  .product-card__stock {
+    display: none;
+  }
+}
+
+
 /* Gorizontal view */
 
 .product-card--h {
-  $break-point: $tablet;
+  $break-point: 680px;
   $paddingY: 16px;
   $paddingX: 18px;
 
-  @include media($break-point) {
-    flex-direction: row;
-    align-items: flex-start;
+  .product-card__inner {
+    @include media($break-point) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   .product-card__photo {

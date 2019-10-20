@@ -1,3 +1,4 @@
+
 .ui-kit
   //- Star Rating
   .ui-section
@@ -145,4 +146,32 @@
         include ../pagination/pagination.pug
         +pagination()
     .ui-section__description
-      p Блоков: pagination
+      p Блок: pagination
+
+  //- Filter
+  .ui-section
+    h2.ui-section__title Filter list
+    .ui-section__component
+      .ui-section__line
+        ul.filter-list
+          li.filter-list__item
+            +checkbox({ 
+              name: 'Аккумуляторные батареи',
+              total: '(119)'
+            })
+          li.filter-list__item
+            +checkbox({
+              name: 'Багажники на крышу',
+              total: '(45)'
+            })
+          li.filter-list__item
+            +checkbox({
+              name: 'Фаркопры',
+              total: '(0)',
+              attrs: {
+                disabled: true
+              },
+            })
+    .ui-section__description
+      p Блок: check
+

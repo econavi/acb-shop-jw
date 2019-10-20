@@ -17,29 +17,13 @@
     h2.ui-section__title Custom checkbox
     .ui-section__component
       .ui-section__line
-        label.check
-          input.check__input(type="checkbox")
-          span.check__box 
-          span.check__label Checkbox
-      
+        +checkbox()
       .ui-section__line
-        label.check
-          input.check__input(type="checkbox" checked)
-          span.check__box 
-          span.check__label Checked
-      
+        +checkbox({attrs: { checked: true }})
       .ui-section__line
-        label.check
-          input.check__input(type="checkbox" disabled)
-          span.check__box 
-          span.check__label Disabled
-      
+        +checkbox({attrs: { disabled: true }})
       .ui-section__line
-        label.check
-          input.check__input(type="checkbox" checked disabled)
-          span.check__box 
-          span.check__label Checked Disabled
-    
+        +checkbox({attrs: { checked: true, disabled: true }})    
     .ui-section__description
       p Блок: check
   

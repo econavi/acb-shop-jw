@@ -1,0 +1,13 @@
+mixin checkbox(data)
+  -
+    var data = data || {};
+    var labelName = data.name || 'Checkbox';
+    var total = data.total;
+    var attrs = data.attrs;
+  
+  label.check
+    input.check__input(type="checkbox")&attributes(attrs)
+    span.check__box 
+    span.check__label=labelName
+    - if(total)
+      span.check__total=total

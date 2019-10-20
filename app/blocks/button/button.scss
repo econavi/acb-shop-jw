@@ -59,4 +59,11 @@
     background: $secondary-bg-color;
     border: none;
   }
+
+  &--reset {
+    &::before {
+      content: '\2715';
+      padding-right: 8px;
+    }
+  }
 }

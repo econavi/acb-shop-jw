@@ -33,6 +33,7 @@
 
 // обнулить стили button
 @mixin buttonReset() {
+  padding: 0;
   background: none;
   border: none;
   color: inherit;

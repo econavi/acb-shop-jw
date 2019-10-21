@@ -1,0 +1,12 @@
+.filters {
+  @include listReset();
+  border: 1px solid $gray-light;
+  
+  &__item {
+    border-bottom: 1px solid $gray-light;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

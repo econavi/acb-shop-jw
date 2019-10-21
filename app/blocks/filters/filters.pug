@@ -1,0 +1,76 @@
+ul.filters
+  li.filters__item
+    .accordion
+      .accordion__header Категория
+      .accordion__body
+        .accordion__content
+          ul.filter-list
+            li.filter-list__item
+              +checkbox({ 
+                name: 'Аккумуляторные батареи',
+                total: '(119)'
+              })
+            li.filter-list__item
+              +checkbox({
+                name: 'Фаркопры',
+                total: '(0)',
+                attrs: {
+                  disabled: true
+                }
+              })
+  li.filters__item
+    .filter.accordion
+      span.accordion__header Бренд
+      .accordion__body
+        .accordion__content
+          ul.filter-list
+            li.filter-list__item
+              +checkbox({ 
+                name: 'Bosch',
+                total: '(64)'
+              })
+            li.filter-list__item
+              +checkbox({
+                name: 'Varta',
+                total: '(55)'
+              })
+  li.filters__item
+    .filter.accordion
+      span.accordion__header Полярность
+      .accordion__body
+        .accordion__content
+          ul.filter-list
+            li.filter-list__item
+              +checkbox({ 
+                name: '+/-',
+                total: '(98)'
+              })
+            li.filter-list__item
+              +checkbox({
+                name: '-/+',
+                total: '(21)'
+              })
+  li.filters__item
+    .filter.accordion
+      span.accordion__header Длина
+      .accordion__body
+        .accordion__content
+          ul.filter-list
+            li.filter-list__item
+              +checkbox({ 
+                name: '54 см',
+                total: '(49)'
+              })
+            li.filter-list__item
+              +checkbox({
+                name: '58 см',
+                total: '(0)',
+                attrs: { disabled: true }
+              })
+            li.filter-list__item
+              +checkbox({
+                name: '63 см',
+                total: '(70)',
+              })
+
+  

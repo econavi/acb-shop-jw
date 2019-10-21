@@ -2,8 +2,10 @@
 /* Check */
 
 .check {
+  position: relative;
   display: inline-block;
   padding-left: 1.2em;
+  font-size: 16px;
 }
 
 .check__input {
@@ -16,10 +18,10 @@
 
 .check__box {
   position: absolute;
-  margin-top: 0.28em;
-  margin-left: -1em;
-  width: 0.6em;
-  height: 0.6em;
+  top: 0.2em;
+  left: 0;
+  width: 0.8em;
+  height: 0.8em;
   overflow: hidden;
   border-radius: 0.05em;
   background-color: white;
@@ -32,11 +34,15 @@
 
 .check__label {
   line-height: 1.3;
+  font-weight: 500;
+  user-select: none;
   cursor: pointer;
 }
 
 .check__total {
   padding-left: 0.2em;
+  font-weight: 500;
+  user-select: none;
   color: $gray;
 }
 

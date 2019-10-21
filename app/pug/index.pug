@@ -11,7 +11,13 @@ block content
       header.page__main-nav
         +mainNav()
       main.page__content
-        h1 Главная страница
-        +rating('cat01')
+        section.catalog
+          .catalog__header
+            h1 Аккумуляторные батареи
+          .catalog__main
+            .catalog__sidebar
+              p .catalog__sidebar
+            .catalog__list
+              p .catalog__list
       footer.page__footer
         include ../blocks/footer/footer.pug

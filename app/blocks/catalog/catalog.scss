@@ -1,32 +1,28 @@
 .catalog {
   $break-point: $tablet;
-
-  * {padding: 1px} // debug
   
   &__header {
     // 
   }
   
   &__main {
-    @include x(green); // debug
-    
     @include media($break-point) {
       display: flex;
     }
   }
   
   &__sidebar {
-    @include x(gray); // debug
-
     @include media($break-point) {
       margin-right: $grid-gutter-default;
       flex-basis: 25%;
     }
-    
+  }
+
+  &__sidebar-top {
+    margin-bottom: 15px;
   }
   
   &__list {
-    @include x(yellow); // debug
     flex-grow: 1;
   }
 }

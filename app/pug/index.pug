@@ -16,7 +16,9 @@ block content
             h1 Аккумуляторные батареи
           .catalog__main
             .catalog__sidebar
-              p .catalog__sidebar
+              .catalog__sidebar-top
+                button.button.button--secondary.button--round.button--reset(type="button") Сбросить всё
+              include ../blocks/filters/filters.pug
             .catalog__list
               p .catalog__list
       footer.page__footer

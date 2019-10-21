@@ -28,13 +28,13 @@ function Accordion(accordionElement) {
   };
 
   this.clickHandler = (e) => {
-    e.preventDefault();
     const { target } = e;
 
     // Если клик не по переключателю, ничего не делаем
     const clickOnToggle = target.classList.contains(this.selectors.toggle);
-
     if (!clickOnToggle) return;
+
+    e.preventDefault();
 
     // Получим текущий Аккордеон
     this.currentAccordion = target.parentElement;

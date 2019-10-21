@@ -1,35 +1,37 @@
 .accordion {
+  $main-padding: 15px;
   background: white;
 
   &__header {
     position: relative;
+    display: block;
     margin: 0;
-    padding: 15px;
+    padding: $main-padding;
     padding-right: 48px;
-    @include setFontFluid(16px, 22px);
+    font-size: 16px;
     letter-spacing: 0.005em;
-    text-transform: uppercase;
     color: black;
-    background: #F5F5F5;
     cursor: pointer;
+    user-select: none;
     transition: $transition-default;
 
     &:hover {
       opacity: $opacity-hover-default;
     }
 
+    // Arrow icon
     &::before {
+      $size-icon: 8px;
       content: '';
       position: absolute;
       top: 50%;
       right: 16px;
-      width: 16px;
-      height: 16px;
+      width: $size-icon;
+      height: $size-icon;
       border: 2px solid lightslategray;
       border-bottom-color: transparent;
       border-left-color: transparent;
       transform: translateY(-75%) rotate(135deg);
-      
     }
   }
 
@@ -40,13 +42,8 @@
   }
 
   &__content {
-    padding-top: 10px;
-  }
-
-  &__bottom-section {
-    padding-top: 30px;
-    padding-bottom: 60px;
-    text-align: center;
+    padding: $main-padding;
+    padding-top: 5px;
   }
 }
 

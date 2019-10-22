@@ -18,3 +18,9 @@
     }
   }
 }
+
+.catalog-list--view-h {
+  .catalog-list__item {
+    @include grid-col-size(12);
+  }
+}

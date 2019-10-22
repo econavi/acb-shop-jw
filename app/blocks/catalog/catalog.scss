@@ -2,7 +2,19 @@
   $break-point: $tablet;
   
   &__header {
-    // 
+    position: relative;
+    padding-right: 100px;
+  }
+  
+  &__view-switcher {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+
+    @include media($break-point) {
+      display: block;
+    }
   }
   
   &__main {

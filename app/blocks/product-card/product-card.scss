@@ -16,11 +16,12 @@
 
   &__photo {
     display: block;
-    width: 80%;
+    width: 70%;
     max-width: 255px;
     max-height: 190px;
     margin: 0 auto;
     margin-bottom: $marginY;
+    overflow: hidden;
   }
 
   &__content {
@@ -109,7 +110,7 @@
 
 /* Gorizontal view */
 
-.product-card--h {
+.catalog-list--view-h .product-card {
   $break-point: 680px;
   $paddingY: 16px;
   $paddingX: 18px;

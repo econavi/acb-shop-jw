@@ -1,0 +1,15 @@
+.section-main {
+  position: relative;
+  @include setPropFluid(padding-top, 20, 60);
+  @include setPropFluid(padding-bottom, 20, 60);
+
+  background: $white;
+
+  &--bg-color {
+    background-color: #F6F6F6;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}

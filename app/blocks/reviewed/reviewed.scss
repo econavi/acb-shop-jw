@@ -1,0 +1,30 @@
+.reviewed {
+  &__title {
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+
+    // Decore
+    $decore-color: $gray;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0.75em;
+      width: 1em;
+      height: 1em;
+      font-size: 14px;
+      border-radius: 50%;
+      background-image: linear-gradient(to top, $decore-color 0.4em, transparent 0.4em, transparent 0.6em, $decore-color 0.6em);
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+  }
+}

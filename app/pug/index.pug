@@ -7,11 +7,11 @@ block head
 
 block content
   body.page
-    .page__inner.content-container
+    .page__inner
       header.page__main-nav
         +mainNav()
       main.page__content
-        section.catalog
+        section.section-main.content-container.catalog
           .catalog__header
             h1 Аккумуляторные батареи
             .catalog__view-switcher.js-catalog-view-switcher
@@ -28,6 +28,10 @@ block content
                   option 10
                   option 20
                   option 30
-
+        section.section-main.section-main--bg-color.reviewed
+          .content-container
+            .section-main__title.section-main__title--center
+               h2.reviewed__title Недавно вы смотрели
+               +reviewedSlider()
       //- footer.page__footer
       //-   include ../blocks/footer/footer.pug

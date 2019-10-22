@@ -1,8 +1,6 @@
 .page {
   display: flex; // For IE11
   flex-direction: column;
-  max-width: $page-width;
-  margin: 0 auto;
   
   &__inner {
     position: relative;
@@ -12,7 +10,6 @@
   }
   
   &__main-nav {
-    // position: absolute;
     position: relative;
     top: 0;
     left: 0;

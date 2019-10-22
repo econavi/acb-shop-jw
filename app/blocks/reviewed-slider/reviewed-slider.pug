@@ -1,0 +1,42 @@
+mixin reviewedSlider()
+  .reviewed-slider.swiper-container.js-reviewed-slider
+    .swiper-wrapper
+      .swiper-slide
+        +productCard({
+          img: '/assets/img/akb/akb6.jpg',
+          name: 'Аккумулятор Bosch S4 70Ah 630A 261x175x220',
+          price: '5 460'
+        }, 'simple')
+      .swiper-slide
+        +productCard({
+          img: '/assets/img/akb/akb2.jpg',
+          name: 'Аккумулятор Bosch S4 60Ah 540A 242x175x190 (-+) №0092S40050',
+          price: '6 416'
+        }, 'simple')
+      .swiper-slide
+        +productCard({
+          img: '/assets/img/akb/akb3.jpg',
+          name: 'Аккумулятор Exide Excell 45Ah 300A №EB457',
+          price: '10 440'
+        }, 'simple')
+      .swiper-slide
+        +productCard({
+          img: '/assets/img/akb/akb1.jpg',
+          name: 'Аккумулятор Exide Excell 35Ah 240A 242x175x190 (-+) №0092S40050',
+          price: '9 000'
+        }, 'simple')
+      .swiper-slide
+        +productCard({
+          img: '/assets/img/akb/akb3.jpg',
+          name: 'Аккумулятор Bolk 132Ah 870A 513x189x213 прям R+',
+          price: '5 941'
+        }, 'simple')
+      .swiper-slide
+        +productCard({
+          img: '/assets/img/akb/akb6.jpg',
+          name: 'Аккумулятор Tudor Starter 55Ah 460A 242x175x190',
+          price: '10 104'
+        }, 'simple')
+    .reviewed-slider__control
+      button(type="button").reviewed-slider__prev.swiper-button-prev
+      button(type="button").reviewed-slider__next.swiper-button-next

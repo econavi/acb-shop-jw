@@ -16,12 +16,17 @@
 
   &__photo {
     display: block;
-    width: 70%;
     max-width: 255px;
-    max-height: 190px;
+    min-height: 180px;
     margin: 0 auto;
     margin-bottom: $marginY;
     overflow: hidden;
+
+    > * {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 
   &__content {

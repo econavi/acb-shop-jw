@@ -1,0 +1,20 @@
+.catalog-list {
+  @include grid-row();
+
+  &__item {
+    > * {
+      height: 100%;
+    }
+
+    @include grid-col();
+    margin-bottom: $grid-gutter-default;
+
+    @include media($tablet) {
+      @include grid-col-size(6);
+    }
+
+    @include media($laptop) {
+      @include grid-col-size(4);
+    }
+  }
+}

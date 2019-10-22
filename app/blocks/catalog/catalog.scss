@@ -12,9 +12,12 @@
   }
   
   &__sidebar {
+    margin-bottom: $grid-gutter-default;
+    
     @include media($break-point) {
-      margin-right: $grid-gutter-default;
       flex-basis: 25%;
+      margin-right: $grid-gutter-default;
+      margin-bottom: 0;
     }
   }
 

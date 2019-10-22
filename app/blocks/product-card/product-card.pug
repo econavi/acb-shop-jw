@@ -18,7 +18,8 @@ mixin productCard(data, mods)
 
   .product-card(class=allMods)
     .product-card__inner
-      img.product-card__photo(src=imgSrc alt="")
+      .product-card__photo
+        img(src=imgSrc alt="")
       .product-card__content
         .product-card__rating
           +rating(id)

@@ -22,5 +22,12 @@ block content
               include ../blocks/filters/filters.pug
             .catalog__list
               include ../blocks/catalog-list/catalog-list.pug
-      footer.page__footer
-        include ../blocks/footer/footer.pug
+              .catalog__list-nav
+                +pagination()
+                select.form-select.form-input.form-input--inline
+                  option 10
+                  option 20
+                  option 30
+
+      //- footer.page__footer
+      //-   include ../blocks/footer/footer.pug

@@ -1,5 +1,5 @@
 .form-input {  
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 0.72em 1.05em;
   font-size: 16px;
@@ -10,5 +10,9 @@
   &--size-xl {
     padding: 0.92em 1.45em;
     font-size: 20px;
+  }
+
+  &--inline {
+    width: auto;
   }
 }

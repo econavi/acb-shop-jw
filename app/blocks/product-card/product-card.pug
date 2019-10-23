@@ -1,10 +1,15 @@
 mixin productCard(data, mods)
   -
+    var typeCardIsSimple = false;
     var allMods = '';
     if(typeof(mods) !== 'undefined' && mods) {
       var modsList = mods.split(',');
       for (var i = 0; i < modsList.length; i++) {
         allMods = allMods + ' product-card--' + modsList[i].trim();
+        if(modsList[i].trim() == 'simple') {
+          typeCardIsSimple = true;
+          console.log(typeCardIsSimple);
+        }
       }
     }
 
@@ -21,8 +26,9 @@ mixin productCard(data, mods)
       .product-card__photo
         img(src=imgSrc alt="")
       .product-card__content
-        .product-card__rating
-          +rating(id)
+        if !typeCardIsSimple
+          .product-card__rating
+            +rating(id)
         a.product-card__title(href="javascript:void(0)")=name
         .product-card__footer
           .product-card__row

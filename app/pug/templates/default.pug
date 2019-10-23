@@ -9,8 +9,9 @@ include ../../blocks/reviewed-slider/reviewed-slider.pug
 include ../../blocks/main-nav/main-nav.pug
 include ../../blocks/main-menu/main-menu.pug
 
+- var bundleJS = '/scripts/bundle.min.js';
+
 doctype html
 html(lang='ru')
   include head.pug
   block content
-  script(src="/scripts/bundle.min.js")

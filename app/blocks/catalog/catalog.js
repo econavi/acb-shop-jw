@@ -15,6 +15,8 @@ const toggleViewCatalog = () => {
   const switcher = document.querySelector(`.${options.selectors.switcher}`);
   const catalog = document.querySelector(`.${options.selectors.catalog}`);
 
+  if (!switcher || !catalog) return;
+
   // Обработчик переключает css-class каталога
   // для его отображения плиткой или списком
   const clickHandler = (e) => {

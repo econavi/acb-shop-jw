@@ -3,11 +3,15 @@ import mainMenu from '../blocks/main-menu/main-menu';
 import Accordion from '../blocks/accordion/accordion';
 import toggleViewCatalog from '../blocks/catalog/catalog';
 import reviewedSlider from '../blocks/reviewed-slider/reviewed-slider';
+import burger from '../blocks/burger/burger';
+import mainNav from '../blocks/main-nav/main-nav';
 
 class Viewer {
   constructor() {
-    this.mainMenu = mainMenu;
     this.svg4everybody = svg4everybody;
+    this.mainNav = mainNav;
+    this.mainMenu = mainMenu;
+    this.burger = burger;
     this.toggleViewCatalog = toggleViewCatalog;
     this.reviewedSlider = reviewedSlider;
     this.init();
@@ -19,7 +23,9 @@ class Viewer {
 
   initClasses() {
     this.svg4everybody();
+    this.mainNav();
     this.mainMenu();
+    this.burger();
     this.toggleViewCatalog();
     this.reviewedSlider();
 

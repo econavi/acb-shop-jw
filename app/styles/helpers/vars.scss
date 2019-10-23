@@ -10,8 +10,8 @@ $border-radius-default: 4px;
 
 // ------------------------------------------------------
 // Z-INDEX
-$main-menu_z-index: 8000;
-$main-menu-switcher_z-index: 9000;
+$page-main-nav-zindex: 2;
+$main-nav_z-index: 9000;
 
 // ------------------------------------------------------
 // ANIMATION
@@ -93,6 +93,6 @@ $laptop:     1024px;
 $desktop:    1280px;
 $tv:         1440px;
 
-$mobile-menu: 970px;
+$mobile-menu: $tablet;
 
 

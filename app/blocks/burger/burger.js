@@ -1,5 +1,5 @@
 const Burger = () => {
-  const burgerElement = document.querySelector('[data-js="burger"]');
+  const burgerElement = document.querySelector('.js-burger');
 
   if (burgerElement) {
     burgerElement.addEventListener('click', (e) => {

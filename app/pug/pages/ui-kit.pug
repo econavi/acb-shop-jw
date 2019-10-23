@@ -6,11 +6,10 @@ block head
 
 block content
   body.page
-    .page__inner.content-container
+    .page__inner
       header.page__main-nav
         +mainNav()
       main.page__content
-        h1 UI-Kit
-        include ../../blocks/ui-kit/ui-kit.pug
-      footer.page__footer
-        include ../../blocks/footer/footer.pug
+        .section-main.content-container
+          h1 UI-Kit
+          include ../../blocks/ui-kit/ui-kit.pug

@@ -1,4 +1,15 @@
-mixin mainNav()
-  .main-nav
-    +mainLogo()
-    include ../main-menu/main-menu.pug
+include ../burger/burger.pug
+
+mixin mainNav(page = null)
+  if page == 'homePage'
+    - var burgerColor = 'white';
+    - var mainLogoType = 'white';
+    - var mainMenuTheme = 'dark';
+  
+  nav.main-nav.content-container
+    a.main-nav__logo(href="/")
+      +mainLogo(mainLogoType)
+    .main-nav__menu.js-main-menu
+      +mainMenu(mainMenuTheme)
+    .main-nav__menu-switcher.js-main-menu-switcher
+      +burger(burgerColor)

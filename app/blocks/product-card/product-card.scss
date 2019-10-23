@@ -129,9 +129,22 @@
 
   .product-card__photo {
     @include media($break-point) {
-      max-width: 155px;
       margin: 10px;
+      max-width: 255px;
+      min-height: auto;
     }
+
+    > * {
+      @include media($break-point) {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .product-card__content {
+    height: 100%;
   }
 
   .product-card__rating {
